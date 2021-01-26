@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import {Paper, makeStyles} from '@material-ui/core';
 import './App.css';
 
-function App() {
+const useStyles = makeStyles(() => ({
+  main: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "lightgray",
+    height: "100vh"
+  },
+  paper: {
+    height: "50rem",
+    width: "100rem",
+  }
+}));
+
+
+
+const App = () => {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.main} >
+      <Paper elevation={5} className={classes.paper}>
+        <h1>Connectify app</h1>
+      </Paper>
     </div>
   );
-}
+} 
 
 export default App;
