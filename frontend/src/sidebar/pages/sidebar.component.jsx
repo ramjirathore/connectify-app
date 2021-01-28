@@ -3,7 +3,7 @@ import Header from '../../shared/components/header.component';
 
 const useStyles = makeStyles(() => ({
     sidebar: {
-        flex: 0.3,
+       flex:0.3,
         borderRight: "1px solid #323739"
     }
 }));

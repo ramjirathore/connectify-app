@@ -1,4 +1,5 @@
 import {makeStyles} from '@material-ui/core';
+import HeaderChat from './headerChat.component';
 
 
 const useStyles = makeStyles(() => ({
@@ -7,10 +8,11 @@ const useStyles = makeStyles(() => ({
     }
 }));
 
-const Chat = () => {
+const Chat = (props) => {
     const classes = useStyles();
 	return( <div className={classes.chatContainer}>
-        I'm chat
+        <HeaderChat/>
+      I'm chat
     </div>);
 };
 

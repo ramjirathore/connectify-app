@@ -14,9 +14,9 @@ const useStyles = makeStyles(() => ({
   },
   paper: {
     display: "flex",
-    height: "50rem",
+    height: "90vh",
     background: '#131c21',
-    width: "90rem",
+    width: "90vw",
   }
 }));
 
